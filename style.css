@@ -1,0 +1,278 @@
+.face{
+    border: 2px;
+    height: 100px;
+    width: 100px;
+    background-color: cadetblue;
+    margin-top: 140px;
+    margin-left: 150px;
+    margin-bottom: 100px;
+    position: relative;
+    border-radius: 0px 0px 50px 50px;
+    transform-origin: bottom;
+    animation: moveface 5s infinite;
+}
+.eye1{
+    border:2px;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    background-color: black;
+    border-radius:50px 100px;
+    rotate: 40deg;
+    bottom: 50px;
+    left: 15px;
+    animation: moveeye1 5s infinite;
+}
+.eye2{
+    border:2px;
+    height: 19px;
+    width: 20px;
+    position: absolute;
+    background-color: black;
+    border-radius:50px 100px;
+    rotate: 40deg;
+    bottom: 50px;
+    left: 60px;
+    animation: moveeye2 5s infinite;
+}
+.mouth{
+    border: 2px;
+    height: 10px;
+    width: 40px;
+    background-color: black;
+    animation: movemouth 5s infinite;
+    position: absolute;
+    top: 70px;
+    left: 27px;
+}
+.body{
+    border: 2px;
+    background-color:cadetblue;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    bottom: 100px;
+    left: 150px;
+    transform-origin: top;
+    animation: movebody 5s infinite;
+}
+.lefthand{
+    border: 2px;
+    background-color: cadetblue;
+    height: 10px;
+    width: 80px;
+    position:relative;
+    transform: rotate(110deg);
+    transform-origin:top;
+    bottom: 165px;
+    left: 95px;
+    animation: movelefthand 5s infinite;
+}
+.righthand{
+    border: 2px;
+    background-color: cadetblue;
+    height: 10px;
+    width: 85px;
+    position:relative;
+    transform: rotate(74deg);
+    transform-origin: top;
+    bottom: 173px;
+    left: 220px;
+    animation: moverighthand 5s infinite;
+}
+.leftleg{
+    border: 2px;
+    background-color: cadetblue;
+    height: 10px;
+    width: 80px;
+    position: relative;
+    transform: rotate(90deg);
+    left: 130px;
+    bottom: 85px;
+    transform-origin: top;
+    animation: moveleftleg 5s infinite;
+}
+.rightleg{
+    border: 2px;
+    background-color: cadetblue;
+    height: 10px;
+    width: 80px;
+    position: relative;
+    transform: rotate(90deg);
+    left: 190px;
+    bottom: 95px;
+    transform-origin: top;
+    animation: moverightleg 5s infinite;
+}
+
+@keyframes movemouth{
+    0%{
+        width: 0px;
+    }
+    25%{
+        width: 45px;
+    }
+    50%{
+        width: 0px;
+    }
+    75%{
+        width: 45px;
+    }
+    100%{
+        width: 0px;
+    }
+}
+@keyframes moveleftleg {
+    0%{
+        transform: rotate(90deg)
+    }
+    25%{
+        transform: rotate(180deg);
+    }
+    50%{
+        transform: rotate(270deg);
+    }
+    75%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+    
+}
+@keyframes moverightleg {
+    0%{
+        transform: rotate(-90deg)
+    }
+    25%{
+        transform: rotate(-180deg);
+    }
+    50%{
+        transform: rotate(-270deg);
+    }
+    75%{
+        transform: rotate(-360deg);
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+   
+}
+@keyframes movelefthand{
+    0%{
+        transform: rotate(90deg)
+    }
+    25%{
+        transform: rotate(180deg);
+    }
+    50%{
+        transform: rotate(270deg);
+    }
+    75%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+   
+}
+@keyframes moverighthand{
+    0%{
+        transform: rotate(-90deg)
+    }
+    25%{
+        transform: rotate(-180deg);
+    }
+    50%{
+        transform: rotate(-270deg);
+    }
+    75%{
+        transform: rotate(-360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+   
+}
+@keyframes moveeye2{
+    0%{
+        transform: rotate(90deg);
+        background-color:cornsilk;
+    }
+    25%{
+        transform: rotate(180deg);
+        background-color:darkgoldenrod;
+    }
+    50%{
+        transform: rotate(270deg);
+        background-color:darkviolet;
+    }
+    75%{
+        transform: rotate(360deg);
+        background-color:gold;
+    }
+    100%{
+        transform: rotate(0deg);
+        background-color:darkolivegreen;
+    }
+}
+@keyframes moveeye1{
+    0%{
+        transform: rotate(90deg);
+        background-color:cornsilk;
+    }
+    25%{
+        transform: rotate(180deg);
+        background-color:darkgoldenrod;
+    }
+    50%{
+        transform: rotate(270deg);
+        background-color:darkviolet;
+    }
+    75%{
+        transform: rotate(360deg);
+        background-color:gold;
+    }
+    100%{
+        transform: rotate(0deg);
+        background-color:darkolivegreen;
+    }
+}
+.pagebody{
+    animation: clbody 5s infinite;
+}
+@keyframes clbody {
+    0%{
+        background-color: darkblue;
+    }
+    10%{
+        background-color: blueviolet;
+    }
+    20%{
+        background-color: brown;
+    }
+    30%{
+        background-color: chocolate;
+    }
+    40%{
+        background-color: darkgreen;
+    }
+    50%{
+        background-color: darkgreen;
+    }
+    60%{
+        background-color: cornflowerblue;
+    }
+    70%{
+        background-color: darkgoldenrod;
+    }
+    80%{
+        background-color: greenyellow;
+    }
+    90%{
+        background-color: hotpink;
+    }
+    100%{
+        background-color:darksalmon;
+    }
+}
